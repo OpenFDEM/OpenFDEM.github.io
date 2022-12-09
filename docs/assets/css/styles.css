@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: auto;
+  background-color: #ddd;
+  height: 100px;
+  width: 800px;
+  align-items: center;
+  align-content: stretch;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: auto;
+  background-color: #ddd;
+  height: 100px;
+  width: 400px;
+  align-items: center;
+  align-content: stretch;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+img {
+ max-width: 100%;
+ max-height: auto;
+}
+.logo {
+	  width: 10%;
+	  height: auto;
+  }
+.demo {
+  width: 400px;
+  height: auto;
+  max-height: 100px;
+}
+.splash {
+ display: flex;
+ max-width: 800px;
+ max-height: 30%;
+ border-radius: 10px;
+ background-color: #fff;
+ justify-content: center;
+}
+.gallery {
+ max-width: 800px;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: row; 
+ flex-wrap: wrap;
+ background-color: #ddd;
+ align-items: baseline;
+ align-content: stretch;
+ justify-content: space-around;
+}
+.galleryimg {
+ max-width: 800px;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: row; 
+ flex-wrap: wrap;
+ background-color: #ddd;
+ width: 180px;
+ align-items: center;
+ align-content: stretch;
+ justify-content: space-evenly;
+ border: 1px solid #000;
+ border-radius: 4px;
+ padding: 5px;
+}
