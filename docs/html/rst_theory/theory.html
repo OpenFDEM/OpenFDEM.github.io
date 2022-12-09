@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Solid FEM Engine &mdash; OpenFDEM Solver 0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OpenFDEM Solver
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../rst_about_project/intro.html">Features and About OpenFDEM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rst_about_project/requirements.html">System Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rst_about_project/started.html">Quick Start for Developers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rst_about_project/copyrights.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rst_tutorials/command_line_guide.html">Command Line Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../rst_tutorials/tutorial1_ucs.html">Tutorial 1: UCS model from Gmsh</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rst_tutorials/tutorial2_insitu.html">Tutorial 2: In Situ Stress Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rst_tutorials/tutorial3_pressure.html">Tutorial 3: Pressure Method</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../rst_developer/developer.html">Common class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rst_developer/developer.html#geometry-class">Geometry class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rst_developer/developer.html#solid-class">Solid class</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../rst_developer/appendix.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenFDEM Solver</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Solid FEM Engine</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/rst_theory/theory.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="solid-fem-engine">
+<h1>Solid FEM Engine<a class="headerlink" href="#solid-fem-engine" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="solid-cohesive-mechanics">
+<h1>Solid Cohesive Mechanics<a class="headerlink" href="#solid-cohesive-mechanics" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="contact-mechanics">
+<h1>Contact Mechanics<a class="headerlink" href="#contact-mechanics" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="fluid-transport-theory">
+<h1>Fluid Transport Theory<a class="headerlink" href="#fluid-transport-theory" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fracture-fluid-theory">
+<h2>Fracture Fluid Theory<a class="headerlink" href="#fracture-fluid-theory" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="porous-fluid-theory">
+<h2>Porous Fluid Theory<a class="headerlink" href="#porous-fluid-theory" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="two-phase-fluid-theory">
+<h2>Two-Phase Fluid Theory<a class="headerlink" href="#two-phase-fluid-theory" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="gas-flow-theory">
+<h2>Gas Flow Theory<a class="headerlink" href="#gas-flow-theory" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="thermal-transfer-theory">
+<h1>Thermal Transfer Theory<a class="headerlink" href="#thermal-transfer-theory" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="matrix-thermal">
+<h2>Matrix Thermal<a class="headerlink" href="#matrix-thermal" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="fracture-heat-resistance">
+<h2>Fracture Heat Resistance<a class="headerlink" href="#fracture-heat-resistance" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="contact-thermal">
+<h2>Contact Thermal<a class="headerlink" href="#contact-thermal" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="thermal-hydromechanical-chemical-couple">
+<h2>Thermal-HydroMechanical (Chemical) Couple<a class="headerlink" href="#thermal-hydromechanical-chemical-couple" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="phase-field">
+<h1>Phase-Field<a class="headerlink" href="#phase-field" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="particle-discrete-element-method-pdem">
+<h1>Particle Discrete Element Method (pDEM)<a class="headerlink" href="#particle-discrete-element-method-pdem" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="rigid-particle-dem">
+<h2>Rigid Particle DEM<a class="headerlink" href="#rigid-particle-dem" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="irregular-deformable-cluster-dem">
+<h2>Irregular Deformable Cluster DEM<a class="headerlink" href="#irregular-deformable-cluster-dem" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="mesh-adaptive-analysis">
+<h1>Mesh Adaptive Analysis<a class="headerlink" href="#mesh-adaptive-analysis" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="local-adaptive-mesh-refinement">
+<h2>Local Adaptive Mesh Refinement<a class="headerlink" href="#local-adaptive-mesh-refinement" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="global-adaptive-mesh-refinement">
+<h2>Global Adaptive Mesh Refinement<a class="headerlink" href="#global-adaptive-mesh-refinement" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, Xiaofeng Li.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
