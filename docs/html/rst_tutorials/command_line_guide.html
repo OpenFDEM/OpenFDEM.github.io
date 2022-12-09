@@ -226,13 +226,13 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#hydro">hydro</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-porepressure-nodalgroup-p-p-x-p-y">of. boundary.hydro.porepressure nodalgroup p p_x p_y</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-waterlevel-nodalgroup-water-y-initial-p">of. boundary.hydro.waterlevel nodalgroup water_y initial_p</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-pressure-nodalgroup-value">of. boundary.hydro.pressure nodalgroup value</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-pressure-table-nodalgroup-value-tablename">of. boundary.hydro.pressure.table nodalgroup value tablename</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-flow-nodalgroup-flow-rate-value-initial-p">of. boundary.hydro.flow nodalgroup flow_rate_value initial_p</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-flow-table-nodalgroup-value-value2-tablename">of. boundary.hydro.flow.table nodalgroup value value2 tablename</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-impermeable-nodalgroup">of. boundary.hydro.impermeable nodalgroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-porepressure-nodalgroup-p-p-x-p-y">of.boundary.hydro.porepressure nodalgroup p p_x p_y</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-waterlevel-nodalgroup-water-y-initial-p">of.boundary.hydro.waterlevel nodalgroup water_y initial_p</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-pressure-nodalgroup-value">of.boundary.hydro.pressure nodalgroup value</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-pressure-table-nodalgroup-value-tablename">of.boundary.hydro.pressure.table nodalgroup value tablename</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-flow-nodalgroup-flow-rate-value-initial-p">of.boundary.hydro.flow nodalgroup flow_rate_value initial_p</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-flow-table-nodalgroup-value-value2-tablename">of.boundary.hydro.flow.table nodalgroup value value2 tablename</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#of-boundary-hydro-impermeable-nodalgroup">of.boundary.hydro.impermeable nodalgroup</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#blast">blast</a><ul>
@@ -246,8 +246,8 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#thermal">thermal</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#of-boundary-thermal-t0-nodalgroupvalue">of. boundary.thermal.t0 nodalgroupvalue</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#of-boundary-thermal-temperature-nodalgroupvalue">of. boundary.thermal.temperature nodalgroupvalue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#of-boundary-thermal-t0-nodalgroupvalue">of.boundary.thermal.t0 nodalgroupvalue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#of-boundary-thermal-temperature-nodalgroupvalue">of.boundary.thermal.temperature nodalgroupvalue</a></li>
 </ul>
 </li>
 </ul>
@@ -330,7 +330,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#of-damp-global-value">of.damp.global value</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#hydro-1">hydro</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id5">hydro</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#of-hydro-timestep-value">of.hydro.timestep value</a></li>
 </ul>
 </li>
@@ -523,7 +523,7 @@ OpenFDEM.nodal).</p>
 <li><p><a class="reference internal" href="#dfn" id="id21">dfn</a></p></li>
 <li><p><a class="reference internal" href="#table" id="id22">table</a></p></li>
 <li><p><a class="reference internal" href="#damping" id="id23">damping</a></p></li>
-<li><p><a class="reference internal" href="#hydro-1" id="id24">hydro</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id24">hydro</a></p></li>
 <li><p><a class="reference internal" href="#gravity" id="id25">gravity</a></p></li>
 <li><p><a class="reference internal" href="#seismic" id="id26">seismic</a></p></li>
 </ul>
@@ -1077,11 +1077,9 @@ circle</p>
 <h4>of.boundary.nodal.force nodalgroupname xy force_x force_y<a class="headerlink" href="#of-boundary-nodal-force-nodalgroupname-xy-force-x-force-y" title="Permalink to this headline">¶</a></h4>
 <p><strong>meaning</strong>: assign force boundary to nodal groups</p>
 <p><strong>demo</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of. boundary.nodal.force ‘rock’ xy -50.0 27.0
-
- of. boundary.nodal.force ‘rock’ x -50.0
-
- of. boundary.nodal.force ‘rock’ y 27.0
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of.boundary.nodal.force ‘rock’ xy -50.0 27.0
+of.boundary.nodal.force ‘rock’ x -50.0
+of.boundary.nodal.force ‘rock’ y 27.0
 </pre></div>
 </div>
 </div>
@@ -1102,11 +1100,9 @@ coords)</p>
 <div class="section" id="of-boundary-nodal-viscous-nodalgroupnamexy-viscous-x-viscous-y">
 <h4>of.boundary.nodal.viscous nodalgroupnamexy viscous_x viscous_y<a class="headerlink" href="#of-boundary-nodal-viscous-nodalgroupnamexy-viscous-x-viscous-y" title="Permalink to this headline">¶</a></h4>
 <p><strong>demo</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of. boundary.nodal.viscous ‘rock’ xy
-
-of. boundary.nodal.viscous ‘rock’ x
-
-of. boundary.nodal.viscous ‘rock’ y
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of.boundary.nodal.viscous ‘rock’ xy
+of.boundary.nodal.viscous ‘rock’ x
+of.boundary.nodal.viscous ‘rock’ y
 </pre></div>
 </div>
 </div>
@@ -1125,11 +1121,9 @@ of. boundary.nodal.viscous ‘rock’ y
 <div class="section" id="of-boundary-nodal-acceleration-local-nodalgroupname-xy-acc-normal-acc-shear">
 <h4>of.boundary.nodal.acceleration.local nodalgroupname xy acc_ normal acc_ shear<a class="headerlink" href="#of-boundary-nodal-acceleration-local-nodalgroupname-xy-acc-normal-acc-shear" title="Permalink to this headline">¶</a></h4>
 <p><strong>demo</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of. boundary.nodal.force.local ‘rock’ xy -50.0 27.0
-
-  of. boundary.nodal.force.local ‘rock’ x -50.0
-
-  of. boundary.nodal.force.local ‘rock’ y 27.0
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of.boundary.nodal.force.local ‘rock’ xy -50.0 27.0
+of.boundary.nodal.force.local ‘rock’ x -50.0
+of.boundary.nodal.force.local ‘rock’ y 27.0
 </pre></div>
 </div>
 </div>
@@ -1142,11 +1136,11 @@ of. boundary.nodal.viscous ‘rock’ y
 <div class="section" id="of-boundary-nodal-acceleration-table-nodalgroupname-xy-acc-normal-acc-shear-tablename">
 <h4>of.boundary.nodal.acceleration. table nodalgroupname xy acc_ normal acc_ shear tablename<a class="headerlink" href="#of-boundary-nodal-acceleration-table-nodalgroupname-xy-acc-normal-acc-shear-tablename" title="Permalink to this headline">¶</a></h4>
 <p><strong>demo</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of. boundary.nodal.force.local ‘rock’ xy -50.0 27.0
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of.boundary.nodal.force.local ‘rock’ xy -50.0 27.0
 
-  of. boundary.nodal.force.local ‘rock’ x -50.0
+  of.boundary.nodal.force.local ‘rock’ x -50.0
 
-  of. boundary.nodal.force.local ‘rock’ y 27.0
+  of.boundary.nodal.force.local ‘rock’ y 27.0
 </pre></div>
 </div>
 </div>
@@ -1156,11 +1150,9 @@ of. boundary.nodal.viscous ‘rock’ y
 <div class="section" id="of-boundary-nodal-force-table-nodalgroupname-xy-force-x-force-y-tablename">
 <h4>of.boundary.nodal.force.table nodalgroupname xy force_x force_y tablename<a class="headerlink" href="#of-boundary-nodal-force-table-nodalgroupname-xy-force-x-force-y-tablename" title="Permalink to this headline">¶</a></h4>
 <p><strong>demo</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of. boundary.nodal.force.table ‘rock’ xy -50.0 27.0 blast
-
-of. boundary.nodal.force.local ‘rock’ x -50.0
-
-of. boundary.nodal.force.local ‘rock’ y 27.0
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of.boundary.nodal.force.table ‘rock’ xy -50.0 27.0 blast
+of.boundary.nodal.force.local ‘rock’ x -50.0
+of.boundary.nodal.force.local ‘rock’ y 27.0
 </pre></div>
 </div>
 </div>
@@ -1176,9 +1168,8 @@ of. boundary.nodal.force.local ‘rock’ y 27.0
 <div class="section" id="of-boundary-pressure-shear-nodalgroupname-value">
 <h4>of.boundary.pressure.shear nodalgroupname value<a class="headerlink" href="#of-boundary-pressure-shear-nodalgroupname-value" title="Permalink to this headline">¶</a></h4>
 <p><strong>demo</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of. boundary.pressure .normal‘rock’ -50.0
-
-  of. boundary.pressure.shear ‘rock’ -50.0
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of.boundary.pressure .normal‘rock’ -50.0
+of.boundary.pressure.shear ‘rock’ -50.0
 </pre></div>
 </div>
 </div>
@@ -1188,7 +1179,7 @@ of. boundary.nodal.force.local ‘rock’ y 27.0
 <div class="section" id="of-boundary-pressure-shear-table-nodalgroupname-value">
 <h4>of.boundary.pressure.shear.table nodalgroupname value<a class="headerlink" href="#of-boundary-pressure-shear-table-nodalgroupname-value" title="Permalink to this headline">¶</a></h4>
 <p><strong>demo</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of. boundary.pressure.normal.table ‘rock’ -50.0 gas
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of.boundary.pressure.normal.table ‘rock’ -50.0 gas
 </pre></div>
 </div>
 </div>
@@ -1196,25 +1187,25 @@ of. boundary.nodal.force.local ‘rock’ y 27.0
 <div class="section" id="hydro">
 <h3>hydro<a class="headerlink" href="#hydro" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="of-boundary-hydro-porepressure-nodalgroup-p-p-x-p-y">
-<h4>of. boundary.hydro.porepressure nodalgroup p p_x p_y<a class="headerlink" href="#of-boundary-hydro-porepressure-nodalgroup-p-p-x-p-y" title="Permalink to this headline">¶</a></h4>
+<h4>of.boundary.hydro.porepressure nodalgroup p p_x p_y<a class="headerlink" href="#of-boundary-hydro-porepressure-nodalgroup-p-p-x-p-y" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="of-boundary-hydro-waterlevel-nodalgroup-water-y-initial-p">
-<h4>of. boundary.hydro.waterlevel nodalgroup water_y initial_p<a class="headerlink" href="#of-boundary-hydro-waterlevel-nodalgroup-water-y-initial-p" title="Permalink to this headline">¶</a></h4>
+<h4>of.boundary.hydro.waterlevel nodalgroup water_y initial_p<a class="headerlink" href="#of-boundary-hydro-waterlevel-nodalgroup-water-y-initial-p" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="of-boundary-hydro-pressure-nodalgroup-value">
-<h4>of. boundary.hydro.pressure nodalgroup value<a class="headerlink" href="#of-boundary-hydro-pressure-nodalgroup-value" title="Permalink to this headline">¶</a></h4>
+<h4>of.boundary.hydro.pressure nodalgroup value<a class="headerlink" href="#of-boundary-hydro-pressure-nodalgroup-value" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="of-boundary-hydro-pressure-table-nodalgroup-value-tablename">
-<h4>of. boundary.hydro.pressure.table nodalgroup value tablename<a class="headerlink" href="#of-boundary-hydro-pressure-table-nodalgroup-value-tablename" title="Permalink to this headline">¶</a></h4>
+<h4>of.boundary.hydro.pressure.table nodalgroup value tablename<a class="headerlink" href="#of-boundary-hydro-pressure-table-nodalgroup-value-tablename" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="of-boundary-hydro-flow-nodalgroup-flow-rate-value-initial-p">
-<h4>of. boundary.hydro.flow nodalgroup flow_rate_value initial_p<a class="headerlink" href="#of-boundary-hydro-flow-nodalgroup-flow-rate-value-initial-p" title="Permalink to this headline">¶</a></h4>
+<h4>of.boundary.hydro.flow nodalgroup flow_rate_value initial_p<a class="headerlink" href="#of-boundary-hydro-flow-nodalgroup-flow-rate-value-initial-p" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="of-boundary-hydro-flow-table-nodalgroup-value-value2-tablename">
-<h4>of. boundary.hydro.flow.table nodalgroup value value2 tablename<a class="headerlink" href="#of-boundary-hydro-flow-table-nodalgroup-value-value2-tablename" title="Permalink to this headline">¶</a></h4>
+<h4>of.boundary.hydro.flow.table nodalgroup value value2 tablename<a class="headerlink" href="#of-boundary-hydro-flow-table-nodalgroup-value-value2-tablename" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="of-boundary-hydro-impermeable-nodalgroup">
-<h4>of. boundary.hydro.impermeable nodalgroup<a class="headerlink" href="#of-boundary-hydro-impermeable-nodalgroup" title="Permalink to this headline">¶</a></h4>
+<h4>of.boundary.hydro.impermeable nodalgroup<a class="headerlink" href="#of-boundary-hydro-impermeable-nodalgroup" title="Permalink to this headline">¶</a></h4>
 </div>
 </div>
 <div class="section" id="blast">
@@ -1229,10 +1220,8 @@ of. boundary.nodal.force.local ‘rock’ y 27.0
 <h4>of.boundary.element.stress elementgroupname sxx sxy syy<a class="headerlink" href="#of-boundary-element-stress-elementgroupname-sxx-sxy-syy" title="Permalink to this headline">¶</a></h4>
 <p><strong>demo</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of.boundary.element.stress ‘all’ -20e6 2e6 -2e6
-
- of.boundary.element.stress.xgrad elementgroupname sxx.x sxy.x syy.x
-
- of.boundary.element.stress.ygrad elementgroupname sxx.y sxy.y syy.y
+of.boundary.element.stress.xgrad elementgroupname sxx.x sxy.x syy.x
+of.boundary.element.stress.ygrad elementgroupname sxx.y sxy.y syy.y
 </pre></div>
 </div>
 </div>
@@ -1246,10 +1235,10 @@ of. boundary.nodal.force.local ‘rock’ y 27.0
 <div class="section" id="thermal">
 <h3>thermal<a class="headerlink" href="#thermal" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="of-boundary-thermal-t0-nodalgroupvalue">
-<h4>of. boundary.thermal.t0 nodalgroupvalue<a class="headerlink" href="#of-boundary-thermal-t0-nodalgroupvalue" title="Permalink to this headline">¶</a></h4>
+<h4>of.boundary.thermal.t0 nodalgroupvalue<a class="headerlink" href="#of-boundary-thermal-t0-nodalgroupvalue" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="of-boundary-thermal-temperature-nodalgroupvalue">
-<h4>of. boundary.thermal.temperature nodalgroupvalue<a class="headerlink" href="#of-boundary-thermal-temperature-nodalgroupvalue" title="Permalink to this headline">¶</a></h4>
+<h4>of.boundary.thermal.temperature nodalgroupvalue<a class="headerlink" href="#of-boundary-thermal-temperature-nodalgroupvalue" title="Permalink to this headline">¶</a></h4>
 </div>
 </div>
 </div>
@@ -1259,9 +1248,7 @@ of. boundary.nodal.force.local ‘rock’ y 27.0
 <h3>of.mat.element elementgroupname(all) modelname p1 p2 p3 …<a class="headerlink" href="#of-mat-element-elementgroupname-all-modelname-p1-p2-p3" title="Permalink to this headline">¶</a></h3>
 <p><strong>demo</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of.mat.element ‘all’ elastic den 2500 e 40e9 v 0.2
-
-of.mat.element ‘rock’ mc den 2500 e 40e9 v 0.2 ten 10e6 coh 30e6 fric
-0.3
+of.mat.element ‘rock’ mc den 2500 e 40e9 v 0.2 ten 10e6 coh 30e6 fric 0.3
 </pre></div>
 </div>
 </div>
@@ -1275,8 +1262,7 @@ of.mat.element ‘rock’ mc den 2500 e 40e9 v 0.2 ten 10e6 coh 30e6 fric
 <div class="section" id="of-mat-cohesive-cohelementgroupname-all-modelname-p1-p2-p3">
 <h3>of.mat.cohesive cohelementgroupname(all) modelname p1 p2 p3 …<a class="headerlink" href="#of-mat-cohesive-cohelementgroupname-all-modelname-p1-p2-p3" title="Permalink to this headline">¶</a></h3>
 <p><strong>demo</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of.mat.cohesive ‘all’ em pn 1e10 pt 0.5e10 ten 30e6 coh 30e6 fric 0.3 gi
-100 gii 300 (pn pt ten coh fri gi gii)
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of.mat.cohesive ‘all’ em pn 1e10 pt 0.5e10 ten 30e6 coh 30e6 fric 0.3 gi 100 gii 300 (pn pt ten coh fri gi gii)
 </pre></div>
 </div>
 </div>
@@ -1484,11 +1470,9 @@ mat_id group</p>
 </div></blockquote>
 <p><strong>demo</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of.dfn.connectivity 1000 1 15 2 19 1000 999 …
-
-of.dfn.group dfnname setnum
+of.dfn.group dfnname setnum dfn1 dfn4 dfn12…
 </pre></div>
 </div>
-<p>dfn1 dfn4 dfn12…</p>
 <p><strong>demo</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>of.dfn.group ‘dfn_1’ 3 1 7 12
 </pre></div>
@@ -1533,26 +1517,21 @@ double\* data;}
 </div>
 <p><strong>demo</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">of</span><span class="o">.</span><span class="n">damp</span><span class="o">.</span><span class="n">rayleigh</span> <span class="n">elementgroupname</span> <span class="n">value1</span> <span class="n">value2</span>
-
 <span class="n">of</span><span class="o">.</span><span class="n">damp</span><span class="o">.</span><span class="n">rayleigh</span><span class="o">.</span><span class="n">mass</span> <span class="n">elementgroupname</span> <span class="n">value</span>
-
 <span class="n">of</span><span class="o">.</span><span class="n">damp</span><span class="o">.</span><span class="n">rayleigh</span><span class="o">.</span><span class="n">stiffness</span> <span class="n">elementgroupname</span> <span class="n">value</span>
 </pre></div>
 </div>
 </div>
 </div>
-<div class="section" id="hydro-1">
-<span id="id5"></span><h2>hydro<a class="headerlink" href="#hydro-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h2>hydro<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="of-hydro-timestep-value">
 <h3>of.hydro.timestep value<a class="headerlink" href="#of-hydro-timestep-value" title="Permalink to this headline">¶</a></h3>
 <p><strong>demo</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">of</span><span class="o">.</span><span class="n">hydro</span><span class="o">.</span><span class="n">timestep</span> <span class="mf">1e-9</span>
-
 <span class="n">of</span><span class="o">.</span><span class="n">hydro</span><span class="o">.</span><span class="n">matrix</span> <span class="n">off</span>
-
-  <span class="n">of</span><span class="o">.</span><span class="n">hydro</span><span class="o">.</span><span class="n">mechanical</span> <span class="n">off</span>
-
-  <span class="n">of</span><span class="o">.</span><span class="n">hydro</span><span class="o">.</span><span class="n">fracture</span> <span class="n">on</span>
+<span class="n">of</span><span class="o">.</span><span class="n">hydro</span><span class="o">.</span><span class="n">mechanical</span> <span class="n">off</span>
+<span class="n">of</span><span class="o">.</span><span class="n">hydro</span><span class="o">.</span><span class="n">fracture</span> <span class="n">on</span>
 </pre></div>
 </div>
 </div>
