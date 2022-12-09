@@ -1,8 +1,0 @@
-Command Line Guide
-############################
-
-.. csv-table:: OpenFDEM Inputs
-   :file: of_layers.csv
-   :header-rows: 1
-
-.. include:: word_tutorial.rst
