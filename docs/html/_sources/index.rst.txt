@@ -14,15 +14,20 @@ Welcome to OpenFDEM's Documentation
    rst_about_project/requirements
    rst_about_project/started
    rst_about_project/copyrights
-   rst_tutorials/command_line_guide
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Tutorials:
 
    rst_tutorials/tutorial1_ucs
    rst_tutorials/tutorial2_insitu
    rst_tutorials/tutorial3_pressure
+
+.. toctree::
+   :maxdepth: 1
+   :caption: User Guide:
+
+   rst_tutorials/command_line_guide
 
 .. toctree::
    :maxdepth: 2
